@@ -1,6 +1,8 @@
 const pageHelper = require('../helper/page_helper.js');
 const cloudHelper = require('../helper/cloud_helper.js');
 const setting = require('../setting/setting.js');
+const services = require('../services/index.js');
+
 
 module.exports = Behavior({
 
@@ -22,10 +24,14 @@ module.exports = Behavior({
 		_loadList: async function () { 
 			let opts = {
 				title: 'bar'
-			}
-			await cloudHelper.callCloudSumbit('news/home_list', {}, opts).then(res => {
+      }
+      console.log(services, 'services')
+      console.log('loadlist')
+      // await cloudHelper.callCloudSumbit('news/home_list', {}, opts)
+      await services.getKnowledge()
+      .then(res => {
 				this.setData({
-					dataList: res.data
+					dataList: res.rows
 				});
 			})
 		},

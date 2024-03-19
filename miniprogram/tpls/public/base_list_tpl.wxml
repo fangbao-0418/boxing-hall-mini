@@ -3,7 +3,7 @@
 		<block wx:for="{{dataList}}" wx:key="key">
 			<!--上下图 Begin-->
 			<view wx:if="{{listMode=='upimg'}}" class="item card-project shadow-project item-upimg" bindtap="url" data-url="../../{{item.type}}/detail/{{item.type}}_detail?id={{item._id}}">
-				<image mode="widthFix" lazy-load="{{true}}" class="loading" src="{{item.pic}}" />
+				<image mode="widthFix" lazy-load="{{true}}" class="loading" src="{{'http://localhost:8081' + item.thumb}}" />
 				<view class="upimg-title content-cut-two">{{item.title}}</view>
 				<view class="data-desc content-cut-two">{{item.desc}}</view>
 				<view class="data-status">

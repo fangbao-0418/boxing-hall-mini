@@ -64,12 +64,6 @@
 				"selectedIconPath": "/projects/A00/skin/images/tabbar/home_cur.png"
 			},
 			{
-				"pagePath": "projects/A00/news/cate1/news_cate1",
-				"text": "小黑板",
-				"iconPath": "/projects/A00/skin/images/tabbar/cate1.png",
-				"selectedIconPath": "/projects/A00/skin/images/tabbar/cate1_cur.png"
-			},
-			{
 				"pagePath": "projects/A00/news/cate2/news_cate2",
 				"text": "健身常识",
 				"iconPath": "/projects/A00/skin/images/tabbar/cate2.png",
